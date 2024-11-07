@@ -1091,3 +1091,226 @@ border-radius: 10px;
 }
 
 /* END APPOINTMENT */
+
+
+
+/* OUrprofessional-team */
+.ourteam-contaner{
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ourteam-contaner .ourtem-p{
+    font-family: 'Montserrat-Regular.ttf';
+    font-size: 14px;
+}
+
+.ourteam-contaner  h2{
+    font-size: 35px;
+    font-family: 'Montserrat-Bold.ttf';
+}
+
+.ourteam--flexmap{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+.ourteam--cards{
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 19%;
+    border-radius: 10px;
+    background-color: #222222;
+}
+
+.ourteam--cards h4{
+    color: #fff;
+    padding-top: 15px;
+    font-size: 16px;
+    font-family: 'Montserrat-Bold.ttf';
+}
+
+.ourteam--cards p{
+    padding-top: 4px;
+    font-weight: 800;
+    color: #FFC527;
+    font-size: 13px;
+    font-family: 'Montserrat-Regular.ttf';
+}
+
+.ourteam--height{
+    height: 195px;
+    width: 85%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.ourteam-bg{
+    height: 170px;
+    width:170px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 6px;
+    
+}
+
+.ourteam--imgs{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    /* display: none; */
+}
+
+.ourteam--add{
+    position: absolute;
+    width:40px ;
+    background-color: #FFC527;
+    border-radius: 10px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+
+.ourtemicon-color{
+    color: #fff;
+    font-weight: 800;
+}
+
+.ourteam--allicons{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.ourteam-bder-icons{
+
+    height: 30px;
+    width: 30px;
+    border: 1px solid #F9F9F9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #FFC527; */
+}
+
+.ourteam--threeicons{
+    color: #fff;
+}
+/* END-PRESSIONAL */
+
+
+/* OUR BLOGS */
+.blogs--container{
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F9F9F9;
+
+}
+
+.blogs--container h2{
+    font-size: 35px;
+    font-family: 'Montserrat-Bold.ttf';
+}
+
+.blogs--container-p{
+    font-size: 14px;
+    font-family: 'Montserrat-Regular.ttf';
+    
+}
+
+.blogs--allmap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.blogs--mapcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 22%;
+  
+}
+
+.blogs--imgs{
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+.blogs--map-c{
+    width: 90%;
+}
+
+.blogs--map-c .blogs-p-c{
+    font-size: 13px;
+   color: #FFC527;
+    font-family: 'Montserrat-Regular.ttf';
+    font-weight: 800;
+    padding-top: 20px;
+    padding-bottom: 14px;
+}
+
+.blogs--map-c h4{
+    font-size: 16px;
+    font-family: 'Montserrat-Bold.ttf';
+}
+
+.blogs-u-c-flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 14px 0px;
+}
+.blogs-uc-flex{
+    display: flex;
+    align-items: center;
+}
+
+.blogs-u-c-flex p{
+    padding-left: 5px;
+    font-size: 11px;
+    font-family: 'Montserrat-Regular.ttf';
+}
+
+.blogs-uc-flex  .our--span{
+    font-family: 800;
+   
+}
+
+.blog-icon-gry{
+    font-size: 13px;
+    color: gray;
+    
+}
+
+.blogs-des{
+    font-size: 13px;
+    font-family: 'Montserrat-Regular.ttf';
+    color: rgba(128, 128, 128, 0.822);
+}
+/* END BLOGS */
