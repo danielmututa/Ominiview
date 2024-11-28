@@ -14,16 +14,12 @@ import img4 from "../image/ealiest consultaion.png";
 const Hussle = () => {
 
   const Hussledata = [
-    {img:img4, heading:"Earliest Consultation", description:"Let's discuss your electronic engineering project requirements, timelines, and objectives. This initial meeting will help us"},
-    {img:img3, heading:"Customized Solution", description:"Let's discuss your electronic engineering project requirements, timelines, and objectives. This initial meeting will help us"},
-    {img:img2, heading:"Affordable Pricing", description:"Let's discuss your electronic engineering project requirements, timelines, and objectives. This initial meeting will help us"},
-    {img:img1, heading:"All-In-One-Service", description:"Let's discuss your electronic engineering project requirements, timelines, and objectives. This initial meeting will help us"}
+    {img:img4, heading:"Earliest Consultation", description:"Let’s explore your electronic engineering project—covering requirements, timelines, and objectives. This initial discussion ensures we align with your vision and deliver tailored solutions."},
+    {img:img3, heading:"Customized Solution", description:"We’re here to understand your electronic engineering project’s requirements, timelines, and objectives. This first meeting lays the foundation for a solution perfectly tailored to your needs."},
+    {img:img2, heading:"Affordable Pricing", description:"Let’s review your electronic engineering project’s requirements, timelines, and objectives. This initial consultation will allow us to provide you with cost-effective solutions tailored to your needs."},
+    {img:img1, heading:"All-In-One-Service", description:"Let’s go over your electronic engineering project’s requirements, timelines, and objectives. This initial meeting will help us develop a comprehensive solution that covers all aspects of your project."}
   ];
 
-  const projectdone = [
-    {number:'560+', description:'projects done'},
-    {number:'180+', description:'technicians'},
-  ]
   return (
     <div className='hussle--container'>
 
@@ -36,7 +32,7 @@ const Hussle = () => {
                      <div className="hussle-linetext">
       <div className='hussle-line'><span></span></div>
       <div className="hussle--line-p">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nihil molestiae dignissimos incidunt perferendis omnis.</p>
+        <p>We provide reliable, efficient installation services tailored to meet your residential and commercial needs. Experience seamless service from start to finish, backed by our commitment to quality and customer satisfaction.</p>
       </div>
     </div>
 
@@ -59,15 +55,23 @@ const Hussle = () => {
 
     <div className="hussle-allworks-done">
     <div className="hussle-works-t-inner">
-    {projectdone.map((item,index) => (
-      <div key={index} className="hussle--works-time">
+    
+      <div  className="hussle--works-time">
         
-       <p className='hussle-p-number'>{item.number}</p>
-       <p className='hussle-p-n-text'>{item.description}</p>
+       <p className='hussle-p-number'>560+</p>
+       <p className='hussle-p-n-text'>projects done</p>
        <div className='hussle-p-w-line'><span></span></div>
      
+       <p className='hussle-p-number'>180+</p>
+       <p className='hussle-p-n-text'>technicians</p>
+
+     
+
+      
+
+
       </div>
-      ))}
+      
         </div>
     </div>
 

@@ -10,10 +10,10 @@ const Blogs = () => {
 
 
       const blogs=[
-        {img:img2 , type:"ELECTRONIC", clip:"Reason why you should avoid mistakes", iconuser:faUser, name:"OURTEAM" , iconclock:faClock, date:"November 5,2024", des:"Lorem ipsum dolor sit amet consectetur adipisicing elit.  impe, id veritatis nulla expedita ?"},
-        {img:img3 , type:"MORDEN", clip:"Reason why you should avoid mistakes", iconuser:faUser, name:"OURTEAM" , iconclock:faClock, date:"November 5,2024", des:"Lorem ipsum dolor sit amet consectetur adipisicing elit.  impe, id veritatis nulla expedita ?"},
-        {img:img1 , type:"INSTALLATION", clip:"Reason why you should avoid mistakes", iconuser:faUser, name:"OURTEAM" , iconclock:faClock, date:"November 5,2024", des:"Lorem ipsum dolor sit amet consectetur adipisicing elit.  impe, id veritatis nulla expedita ?"},
-        {img:img4 , type:"TELECOMMUNICATION", clip:"Reason why you should avoid mistakes", iconuser:faUser, name:"OURTEAM" , iconclock:faClock, date:"November 5,2024", des:"Lorem ipsum dolor sit amet consectetur adipisicing elit.  impe, id veritatis nulla expedita ?"},
+        {img:img2 , type:"ELECTRONIC", clip:"Reason why you should avoid mistakes", iconuser:faUser, name:"OURTEAM" , iconclock:faClock, date:"November 5,2024", des:"Small mistakes in electronics can lead to costly repairs and delays. Avoiding them ensures smooth operation and prolongs your equipment’s lifespan."},
+        {img:img3 , type:"MORDEN", clip:"Reason why you should avoid mistakes", iconuser:faUser, name:"OURTEAM" , iconclock:faClock, date:"November 5,2024", des:"Small errors in modern systems can cause setbacks, leading to inefficiency, extra costs, and downtime. Preventing mistakes ensures optimal performance and longevity."},
+        {img:img1 , type:"INSTALLATION", clip:"Reason why you should avoid mistakes", iconuser:faUser, name:"OURTEAM" , iconclock:faClock, date:"November 5,2024", des:"Even small installation errors can lead to costly delays and repairs. Avoiding them ensures efficiency and long-term reliability"},
+        {img:img4 , type:"TELECOMMUNICATION", clip:"Reason why you should avoid mistakes", iconuser:faUser, name:"OURTEAM" , iconclock:faClock, date:"November 5,2024", des:"Small mistakes in telecommunication setups can cause significant disruptions. Avoiding them ensures reliable connections and smooth operations."},
       ]
 
   return (

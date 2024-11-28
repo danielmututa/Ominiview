@@ -2,6 +2,8 @@
 import './App.css';
 import Appointment from './Components/appointment/Appointment';
 import Blogs from './Components/Blogs/Blogs';
+import Clients from './Components/clients/Clients';
+import Footer from './Components/Footer/Footer';
 import Header from './Components/Header.js/Header';
 import Home from './Components/Home/Home';
 // import { Routes, Route } from 'react-router-dom';
@@ -29,8 +31,9 @@ function App() {
       <Pricing/>
    <Appointment/>
    <Ourprofessionalteam/>
+   < Clients/>
    < Blogs/>
-
+    <Footer/>
     </div>
   );
 }

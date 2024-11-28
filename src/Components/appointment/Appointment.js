@@ -17,7 +17,7 @@ const Appointment = () => {
         </div>
 
         <h2>Let's Start A Project With Our Team!</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, maiores. Officiis consectetur cupiditate, veritatis atque corrupti earum! Ea natus suscipit, corporis molestias rem autem, est culpa voluptatem impedit voluptates i?</p>
+        <p>Ready to bring your ideas to life? Our team is here to discuss your vision, goals, and how we can make it happen efficiently and effectively. Let's create something great!</p>
 
        
     </div>

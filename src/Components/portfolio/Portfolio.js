@@ -29,13 +29,13 @@ const Portfolio = () => {
 
                     <div className="hussle-twofirst">
                     <p>OUR PORTFOLIO</p>
-                    <h2>Checkout Recent Projects</h2>
+                    <h2>Explore Our Recent Projects</h2>
                      </div>
 
                      <div className="hussle-linetext">
       <div className='hussle-line'><span></span></div>
       <div className="hussle--line-p">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nihil molestiae dignissimos incidunt perferendis omnis.</p>
+        <p>Discover the innovative solutions we've delivered across various industries. Each project reflects our commitment to quality, efficiency, and client satisfaction.</p>
       </div>
     </div>
 

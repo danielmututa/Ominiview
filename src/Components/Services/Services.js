@@ -37,13 +37,13 @@ const Services = () => {
         <div className="services--flex-top">
             <div className="services--h-text"> 
                 <p>OUR SERVICES</p>
-                <h2>Ideal Solution For Time Consuming Problems</h2>
+                <h2>Efficient Solutions for Complex Challenges</h2>
             </div>
 
 
             <div className="services--line-text">
                 <div className="services-line"><span></span></div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nihil molestiae dignissimos incidunt perferendis omnis.</p>
+                <p>We specialize in providing effective, time-saving solutions for your most demanding problems. Our team ensures smooth execution, tailored to meet your unique needs.</p>
             </div>
         </div>
     
