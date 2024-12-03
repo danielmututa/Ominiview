@@ -2,7 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-
+import LocomotiveScroll from 'locomotive-scroll';
+import 'locomotive-scroll/dist/locomotive-scroll.css';
 const Pricing = () => {
 
   const projectRefs = useRef([]);
@@ -31,6 +32,15 @@ const Pricing = () => {
     return () => observer.disconnect();
   }, []);
 
+    
+  useEffect(() => {
+    const scroll = new LocomotiveScroll();
+    return ()=>{
+
+    if (scroll) scroll.destroy();
+  };
+  }, []);
+
 
 
 
@@ -46,14 +56,14 @@ const Pricing = () => {
 
 
         
-<div className="hussle--flex--top-c">
+<div className="hussle--flex--top-c" data-scroll data-scroll-repeat data-scroll-offset="100px, 100px">
 
-<div className="hussle-twofirst">
+<div className="hussle-twofirst" data-scroll data-scroll-repeat data-scroll-offset="100px, 100px">
 <p>OUR PRICING TABLE</p>
 <h2>Our Affordable Pricing</h2>
  </div>
 
- <div className="hussle-linetext">
+ <div className="hussle-linetext" data-scroll data-scroll-repeat data-scroll-offset="100px, 100px">
 <div className='hussle-line'><span></span></div>
 <div className="hussle--line-p">
 <p>We offer competitive and transparent pricing, ensuring value for money without compromising on quality. Explore our pricing options tailored to meet your needs.</p>
@@ -75,8 +85,8 @@ const Pricing = () => {
 
         <div 
         ref={el => projectRefs.current[index] = el}
-
-        className="pricing--three-container  scroll-animation">
+data-scroll data-scroll-repeat data-scroll-offset="100px, 100px"
+        className="pricing--three-container ">
 
 <div className="pricing-amount">
         <p className='pricing-amt-c'>{item.price}</p>

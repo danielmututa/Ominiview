@@ -5,6 +5,9 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram'
 import { faAdd } from '@fortawesome/free-solid-svg-icons'
+import LocomotiveScroll from 'locomotive-scroll';
+import 'locomotive-scroll/dist/locomotive-scroll.css';
+
 const Ourprofessionalteam = () => {
 
   const projectRefs = useRef([]);
@@ -33,6 +36,15 @@ const Ourprofessionalteam = () => {
     return () => observer.disconnect();
   }, []);
 
+
+  useEffect(() => {
+    const scroll = new LocomotiveScroll();
+    return ()=>{
+
+    if (scroll) scroll.destroy();
+  };
+  }, []);
+
       
 
         const ourteam = [
@@ -44,14 +56,14 @@ const Ourprofessionalteam = () => {
 
   return (
     <div className='ourteam-contaner'>
-        <p className='ourtem-p'>OUR PROFESSIONAL</p>
-        <h2>Expert Technical Team</h2>
+        <p data-scroll data-scroll-repeat data-scroll-offset="100px, 100px" className='ourtem-p'>OUR PROFESSIONAL</p>
+        <h2 data-scroll data-scroll-repeat data-scroll-offset="100px, 100px">Expert Technical Team</h2>
 
         <div className="ourteam--flexmap">
             {  ourteam.map((team, index) => (
                <div  key={index}
                ref={el => projectRefs.current[index] = el}
-                 className="ourteam--cards  scroll-animation ">
+                 className="ourteam--cards"  data-scroll data-scroll-repeat data-scroll-offset="100px, 100px">
 
                 <div className="ourteam--height">
                  <div className="ourteam-bg"><img className='ourteam--imgs' src={team.image} alt="" /></div>

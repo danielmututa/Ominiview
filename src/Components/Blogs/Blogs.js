@@ -6,6 +6,10 @@ import img1 from "../image/why-intallation.webp"
 import img2 from "../image/why-mistakes.jpg"
 import img3 from "../image/why-morden.jpg"
 import img4 from "../image/why-telecommunication.jpg"
+import LocomotiveScroll from 'locomotive-scroll';
+import 'locomotive-scroll/dist/locomotive-scroll.css';
+
+
 const Blogs = () => {
 
 
@@ -34,6 +38,14 @@ const Blogs = () => {
     
       return () => observer.disconnect();
     }, []);
+
+    useEffect(() => {
+      const scroll = new LocomotiveScroll();
+      return ()=>{
+  
+      if (scroll) scroll.destroy();
+    };
+    }, []);
   
 
 
@@ -47,14 +59,15 @@ const Blogs = () => {
 
   return (
     <div className='blogs--container'>
-        <p className='blogs--container-p'>BLOGS & ARTICALS</p>
-        <h2>Read Our Latest Blogs</h2>
+        <p data-scroll data-scroll-repeat data-scroll-offset="100px, 100px" className='blogs--container-p'>BLOGS & ARTICALS</p>
+        <h2 data-scroll data-scroll-repeat data-scroll-offset="100px, 100px">Read Our Latest Blogs</h2>
 
         <div className="blogs--allmap">
             { blogs.map((blogs, index) => (
                 <div key={index}
                 ref={el => projectRefs.current[index] = el}
-                 className="blogs--mapcard  scroll-animation">
+                data-scroll data-scroll-repeat data-scroll-offset="100px, 100px"
+                 className="blogs--mapcard">
                     <img className='blogs--imgs' src={blogs.img} alt="" />
 
                     <div className="blogs--map-c">

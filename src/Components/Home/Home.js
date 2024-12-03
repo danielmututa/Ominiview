@@ -53,7 +53,10 @@ import img2 from '../image/banner-img02.jpg';
 import img4 from '../image/banner-repairandservices.jpg';
 import img3 from '../image/banner--security.jpg';
  import Navbar from '../Navbar/Navbar'
- import imgs from '../image/software-engineer.jpg'
+ import clientone from '../image/client-one.jpg'
+ import clienttwo from '../image/client-two.jpg'
+ import clientthree from '../image/client-three.jpg'
+ import clientfour from '../image/clientt-four.jpg'
 
 const Home = () => {
   const [activeImage, setActiveImage] = useState(0);
@@ -101,14 +104,14 @@ const Home = () => {
         <p className="text">{images[activeImage].text}</p>
       
         <div className="home-all-stars">
- <div className="home-stars"> <img className='home--imgs' src={imgs} alt="" /></div>
- <div className="home-starsone"> <img  className='home--imgs' src={imgs} alt="" /></div>
- <div className="home-starstwo"> <img className='home--imgs' src={imgs} alt="" /></div>
- <div className="home-starsthree"> <img className='home--imgs' src={imgs} alt="" /></div>
+ <div lazy='loading' className="home-stars"> <img className='home--imgs' src={clientone} alt="" /></div>
+ <div lazy='loading' className="home-starsone"> <img  className='home--imgs' src={ clienttwo} alt="" /></div>
+ <div lazy='loading' className="home-starstwo"> <img className='home--imgs' src={clientthree} alt="" /></div>
+ <div lazy='loading' className="home-starsthree"> <img className='home--imgs' src={clientfour} alt="" /></div>
            </div>
  <p className="home-stars-textfour">2.3k reviews</p>
 
-           <button className="banner-button">{images[activeImage].btn}</button>
+           <button lazy='loading' className="banner-button">{images[activeImage].btn}</button>
       </div>
       </div>
 
