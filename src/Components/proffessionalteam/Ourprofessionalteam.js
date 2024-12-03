@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import img1 from "../image/software-engineer.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF'
@@ -6,6 +6,34 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram'
 import { faAdd } from '@fortawesome/free-solid-svg-icons'
 const Ourprofessionalteam = () => {
+
+  const projectRefs = useRef([]);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Add a small delay before adding the class for smoother effect
+            setTimeout(() => {
+              entry.target.classList.add('animate-in');
+            }, 100);
+          }
+        });
+      },
+      {
+        threshold: 0.15, // Trigger slightly earlier
+        rootMargin: '50px 0px -10% 0px'
+      }
+    );
+  
+    projectRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+  
+    return () => observer.disconnect();
+  }, []);
+
+      
 
         const ourteam = [
             {image:img1, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"William Mututa", des:"Head Technician"},
@@ -20,8 +48,10 @@ const Ourprofessionalteam = () => {
         <h2>Expert Technical Team</h2>
 
         <div className="ourteam--flexmap">
-            {  ourteam.map((team) =>(
-               <div className="ourteam--cards">
+            {  ourteam.map((team, index) => (
+               <div  key={index}
+               ref={el => projectRefs.current[index] = el}
+                 className="ourteam--cards  scroll-animation ">
 
                 <div className="ourteam--height">
                  <div className="ourteam-bg"><img className='ourteam--imgs' src={team.image} alt="" /></div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
@@ -7,6 +7,35 @@ import img2 from "../image/why-mistakes.jpg"
 import img3 from "../image/why-morden.jpg"
 import img4 from "../image/why-telecommunication.jpg"
 const Blogs = () => {
+
+
+    const projectRefs = useRef([]);
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Add a small delay before adding the class for smoother effect
+              setTimeout(() => {
+                entry.target.classList.add('animate-in');
+              }, 100);
+            }
+          });
+        },
+        {
+          threshold: 0.15, // Trigger slightly earlier
+          rootMargin: '50px 0px -10% 0px'
+        }
+      );
+    
+      projectRefs.current.forEach((ref) => {
+        if (ref) observer.observe(ref);
+      });
+    
+      return () => observer.disconnect();
+    }, []);
+  
+
 
 
       const blogs=[
@@ -22,8 +51,10 @@ const Blogs = () => {
         <h2>Read Our Latest Blogs</h2>
 
         <div className="blogs--allmap">
-            { blogs.map((blogs) => (
-                <div className="blogs--mapcard">
+            { blogs.map((blogs, index) => (
+                <div key={index}
+                ref={el => projectRefs.current[index] = el}
+                 className="blogs--mapcard  scroll-animation">
                     <img className='blogs--imgs' src={blogs.img} alt="" />
 
                     <div className="blogs--map-c">

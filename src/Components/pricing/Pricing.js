@@ -1,9 +1,36 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const Pricing = () => {
+
+  const projectRefs = useRef([]);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Add a small delay before adding the class for smoother effect
+            setTimeout(() => {
+              entry.target.classList.add('animate-in');
+            }, 100);
+          }
+        });
+      },
+      {
+        threshold: 0.15, // Trigger slightly earlier
+        rootMargin: '50px 0px -10% 0px'
+      }
+    );
+  
+    projectRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+  
+    return () => observer.disconnect();
+  }, []);
+
 
 
 
@@ -44,9 +71,12 @@ const Pricing = () => {
 <div className="pricing--plan">
 
 
-      { pricing.map((item) =>(
+      { pricing.map((item, index) =>(
 
-        <div className="pricing--three-container">
+        <div 
+        ref={el => projectRefs.current[index] = el}
+
+        className="pricing--three-container  scroll-animation">
 
 <div className="pricing-amount">
         <p className='pricing-amt-c'>{item.price}</p>
