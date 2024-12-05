@@ -58,7 +58,7 @@ const Blogs = () => {
       ]
 
   return (
-    <div className='blogs--container'>
+    <div id='allblogs' className='blogs--container'>
         <p data-scroll data-scroll-repeat data-scroll-offset="100px, 100px" className='blogs--container-p'>BLOGS & ARTICALS</p>
         <h2 data-scroll data-scroll-repeat data-scroll-offset="100px, 100px">Read Our Latest Blogs</h2>
 

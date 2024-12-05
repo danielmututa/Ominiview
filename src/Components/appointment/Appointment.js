@@ -16,7 +16,7 @@ const Appointment = () => {
   };
   }, []);
   return (
-    <div className='appointment--container'>
+    <div id='allappointment' className='appointment--container'>
 
   <div className="appointment--left-side">
 

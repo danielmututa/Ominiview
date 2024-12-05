@@ -1,6 +1,6 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
-
+// import { NavLink } from "react-router-dom";
+import {Link} from 'react-scroll'
 
 
 const Navbar = () => {
@@ -12,16 +12,83 @@ const Navbar = () => {
      </div>
 
      <div className="navbar--links">
-        <div className="navbar-link-color"> <NavLink to="/" className='navbarlinks'>HOME</NavLink></div>
-        <div className="navbar-link-color">  <NavLink to="/" className='navbarlinks'>ABOUT</NavLink></div>
-        <div className="navbar-link-color">  <NavLink to="/" className='navbarlinks'>SERVICES</NavLink></div>
-        <div className="navbar-link-color">  <NavLink to="/" className='navbarlinks'>PORTFOLIO</NavLink></div>
-        <div className="navbar-link-color"> <NavLink to="/" className='navbarlinks'>CONTACT</NavLink></div>
- 
+
+     <Link 
+     activeClass='active'
+     to='allhome'
+     spy={true}
+     smooth={true}
+     duration={500}
+     offset={50}
+     delay={0}
+     className="navbar-link-color"
+     >
+     HOME
+     </Link>
 
 
 
+     <Link 
+     activeClass='active'
+     to='allhussle'
+     spy={true}
+     smooth={true}
+     duration={500}
+     offset={50}
+     delay={0}
+     className="navbar-link-color"
+     >
+   ABOUT
+     </Link>
 
+
+
+     <Link 
+     activeClass='active'
+     to='allservices'
+     spy={true}
+     smooth={true}
+     duration={500}
+     offset={50}
+     delay={0}
+     className="navbar-link-color"
+     >
+    SERVICES
+     </Link>
+
+
+
+     <Link 
+     activeClass='active'
+     to='allportfolio'
+     spy={true}
+     smooth={true}
+     duration={800}
+     offset={50}
+     delay={0}
+     className="navbar-link-color"
+     >
+     PORTFOLIO
+     </Link>
+
+
+
+     <Link 
+     activeClass='active'
+     to='allappointment'
+     spy={true}
+     smooth={true}
+     duration={1000}
+     offset={50}
+     delay={0}
+     className="navbar-link-color"
+     >
+   CONTACT
+     </Link>
+
+
+
+    
      </div>
 
     </div>
@@ -29,3 +96,13 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+
+
+
+
+
+
+

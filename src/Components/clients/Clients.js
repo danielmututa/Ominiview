@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import img1 from "../image/software-engineer.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleDot, faStar } from '@fortawesome/free-solid-svg-icons'
 import LocomotiveScroll from 'locomotive-scroll';
@@ -56,7 +55,7 @@ const Clients = () => {
       }, []);
 
     return (
-        <div className='client--container'>
+        <div id='allclients' className='client--container'>
             <div className="hussle--flex--top-c"  data-scroll data-scroll-repeat data-scroll-offset="100px, 100px">
                 <div className="hussle-twofirst"  data-scroll data-scroll-repeat data-scroll-offset="100px, 100px" >
                     <p>CLIENT SAYS</p>
@@ -83,7 +82,7 @@ const Clients = () => {
                             <p className='client--cmt-p'  data-scroll data-scroll-repeat data-scroll-offset="100px, 100px">{Client[currentindex].comment}</p>
                             <div className="client--line" data-scroll data-scroll-repeat data-scroll-offset="100px, 100px"><span></span></div>
                             <div className="client--cemment-namer"  data-scroll data-scroll-repeat data-scroll-offset="100px, 100px">
-                                <img className='client--img' src={Client[currentindex].img} alt={Client[currentindex].name} />
+                                <img lazy='loading' className='client--img' src={Client[currentindex].img} alt={Client[currentindex].name} />
                                 <div className="client--comment--flex">
                                     <h4>{Client[currentindex].name}</h4>
                                     <p>{Client[currentindex].type}</p>

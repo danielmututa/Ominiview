@@ -60,7 +60,7 @@ const Portfolio = () => {
 
 
   return (
-    <div className='portfolio--container'>
+    <div id='allportfolio' className='portfolio--container'>
      
 
 <div className="hussle--flex--top-c" data-scroll data-scroll-repeat data-scroll-offset="100px, 100px">

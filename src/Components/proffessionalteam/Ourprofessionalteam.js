@@ -1,10 +1,13 @@
 import React, { useEffect, useRef } from 'react'
-import img1 from "../image/software-engineer.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram'
 import { faAdd } from '@fortawesome/free-solid-svg-icons'
+import headt from '../image/headtechnition.jpg'
+import software from '../image/softwaredeveloper.jpg'
+import electronic from '../image/electronicone--one.jpg'
+import electrictwo from '../image/electricengineertwo.jpg'
 import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 
@@ -48,14 +51,14 @@ const Ourprofessionalteam = () => {
       
 
         const ourteam = [
-            {image:img1, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"William Mututa", des:"Head Technician"},
-            {image:img1, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"Daniel Mututa", des:"Software Enginner"},
-            {image:img1, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"Michael Mututa", des:"Electric Engineer"},
-            {image:img1, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"Emmanuel Mututa", des:"Electric Engineer"}
+            {image:headt, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"William Mututa", des:"Head Technician"},
+            {image:software, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"Daniel Mututa", des:"Software Enginner"},
+            {image:electronic, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"Michael Mututa", des:"Electric Engineer"},
+            {image:electrictwo, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"Emmanuel Mututa", des:"Electric Engineer"}
         ]
 
   return (
-    <div className='ourteam-contaner'>
+    <div id='allourteam' className='ourteam-contaner'>
         <p data-scroll data-scroll-repeat data-scroll-offset="100px, 100px" className='ourtem-p'>OUR PROFESSIONAL</p>
         <h2 data-scroll data-scroll-repeat data-scroll-offset="100px, 100px">Expert Technical Team</h2>
 

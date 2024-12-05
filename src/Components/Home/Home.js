@@ -89,7 +89,7 @@ const Home = () => {
   }, [progress, barIndex, activeImage]);
 
   return (
-    <div className="home-section">
+    <div id='allhome' className="home-section">
 
       
       <div className="banner-image-container">

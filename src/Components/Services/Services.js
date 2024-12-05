@@ -54,7 +54,7 @@ const Services = () => {
 
 
   return (
-    <div className='services--container'>
+    <div id='allservices' className='services--container'>
         <div className="services--flex-container">
             
         <div className="services--yellowsh"></div>

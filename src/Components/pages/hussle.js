@@ -34,7 +34,7 @@ const Hussle = () => {
   ];
 
   return (
-    <div className='hussle--container'>
+    <div id='allhussle' className='hussle--container'>
 
 <div className="hussle--flex--top-c">
                     <div className="hussle-twofirst"  data-scroll data-scroll-repeat data-scroll-offset="100px, 100px">

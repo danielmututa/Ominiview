@@ -52,7 +52,7 @@ const Pricing = () => {
 
 
   return (
-    <div className='pricing--container'>
+    <div id='allpricing' className='pricing--container'>
 
 
         
