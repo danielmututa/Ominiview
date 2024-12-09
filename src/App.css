@@ -2816,7 +2816,7 @@ position: relative;
 
       /* HOME */
       .banner-image-container {
-        height: 400px;
+        height: 520px;
     }
 
     .banner-text-container {
@@ -3244,12 +3244,12 @@ position: relative;
 }
 
 .ourteam--cards {
-    padding: 18px;
+    padding: 18px  0px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 38%;
+    width: 48%;
     border-radius: 10px;
     background-color: #222222;
     transition: .5s;
