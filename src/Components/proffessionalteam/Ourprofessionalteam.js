@@ -51,10 +51,10 @@ const Ourprofessionalteam = () => {
       
 
         const ourteam = [
-            {image:headt, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"William Mututa", des:"Head Technician"},
-            {image:software, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"Daniel Mututa", des:"Software Enginner"},
-            {image:electronic, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"Michael Mututa", des:"Electric Engineer"},
-            {image:electrictwo, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"Emmanuel Mututa", des:"Electric Engineer"}
+            {image:headt, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"Sharon Nadia", des:"Head Technician"},
+            {image:software, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"James Nyoni", des:"Software Enginner"},
+            {image:electronic, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"Oliver Tshuma", des:"Electric Engineer"},
+            {image:electrictwo, picon:faAdd, ficon:faFacebookF, iicon:faInstagram, licon:faLinkedinIn, heading:"Joseph Hove", des:"Electric Engineer"}
         ]
 
   return (
